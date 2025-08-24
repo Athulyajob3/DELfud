@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Backend for Fud Delivery App using JSON Server",
   "scripts": {
-    "dev": "json-server --watch db.json --port 5000",
-    "start": "cross-env PORT=$PORT json-server --watch db.json --port $PORT"
+    "dev": "json-server --watch db.json --port 5000 --host 0.0.0.0",
+    "start": "cross-env PORT=$PORT json-server --watch db.json --host 0.0.0.0 --port $PORT"
   },
   "keywords": [],
   "author": "",
