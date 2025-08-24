@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Backend for Fud Delivery App using JSON Server",
   "scripts": {
-    "start": "npx json-server --watch db.json --port $PORT"
+    "dev": "json-server --watch db.json --port 5000",
+    "start": "cross-env PORT=$PORT json-server --watch db.json --port $PORT"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
   }
 }
